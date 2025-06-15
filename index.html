@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>アオイと退屈な事件</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="background"></div> 
+
+  <div id="title-screen" class="screen active">
+    <h1>アオイと退屈な事件</h1>
+    <h2>遊び方</h2>
+    <p>初回プレイの場合は「はじめから」ボタンを選択してから、ストーリーを読み進めてください</p>
+    <p>メインシナリオを読み切ると、選択肢が出ます。あなたは、アオイと同じ結論に達せるのか?</p>
+    <p>二回目以降に選択肢を選びたい場合は「はじめから」を押さず、「選択肢」へボタンを押してください</p>
+    <p>使用した背景画像は全てAI生成です</p>
+    <button id="start-btn">はじめから</button>
+    <button id="choice-btn">選択肢へ</button>
+  </div>
+
+  <div id="game-screen" class="screen">
+    <div id="textbox">
+      <p id="text"></p>
+    </div>
+    <button id="next">▶ 次へ</button>
+
+    <div id="choice">
+      <button id="choice1">犯人は子分です</button>
+      <button id="choice2">犯人は友人です</button>
+      <button id="choice3">分かりません</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
